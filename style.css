@@ -87,16 +87,6 @@ html, body {
     gap: 35px;
 }
 
-@media (max-width: 700px){
-    .contact-telephone {
-        flex-direction: column;
-        gap: 10px;
-    }
-
-    .main__menu {
-
-    }
-}
 
 .telephone, .telephone:visited{
     text-decoration: none;
@@ -160,37 +150,6 @@ html, body {
     padding-top: 192px;
 }
 
-@media (max-width: 1515px){
-    .main__info {
-        padding-left: 10%;
-    }
-}
-
-@media (max-width: 1150px){
-    .main__info {
-        padding-left: 1%;
-    }
-
-    .offers__previews {  
-    }
-
-    .main__additional {
-    }
-
-    .contacts__adress{
-        padding-left: 2%;
-    }
-}
-
-@media (max-width: 900px){
-    .main__info {
-    }
-
-    .contact-telephone_footer{
-        flex-direction: column;
-        gap: 10px;
-    }
-}
 
 .main__header {
     font-style: normal;
@@ -236,6 +195,12 @@ html, body {
     justify-content: space-between;
     margin: 0 auto;
     max-width: 1110px;    
+}
+
+.offers__content-block{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
 }
 
 .offers__item {
@@ -287,6 +252,7 @@ html, body {
     display: flex;
     justify-content: space-between;
     margin: 0 auto;
+    align-items: center;
 }
 
 .info-block {
@@ -409,4 +375,78 @@ html, body {
 
 .legal-notice__info > a {
     text-decoration: none;
+}
+
+@media (max-width: 1515px){
+    .main__info {
+        padding-left: 10%;
+    }
+}
+
+@media (max-width: 1150px){
+    .main__info {
+        padding-left: 1%;
+    }
+    
+    
+    .offers__header{
+        text-align: center;
+    }
+    
+    .offers__previews {
+        flex-direction: column;  
+    }
+    
+    .offers__content-block:not(:last-child){
+        margin-bottom: 15px;  
+    }
+    
+    .main__additional {
+        flex-direction: column;
+        background-color: #66C05D;
+        padding-top: 0px;
+        margin-top: 15px;
+    }
+
+    .info-block:not(:last-child) {
+        margin-right: 0;
+    }
+    
+    .contacts__adress{
+        padding-left: 2%;
+    }
+}
+
+@media (max-width: 900px){
+    .main__info {
+    }
+
+    .contact-telephone_footer{
+        flex-direction: column;
+        gap: 10px;
+    }
+}
+    
+@media (max-width: 700px){
+    .contact-telephone {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .main__menu {
+        
+    }
+    
+    .offers__content-block{
+        flex-direction: column;
+    }
+
+    .offers__item:not(:last-child){
+        margin-right: 0px;
+        margin-bottom: 15px;
+    }
+
+@media (max-width: 500px){
+
+    }
 }
