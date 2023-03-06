@@ -272,7 +272,7 @@ html, body {
     height: 212px;
     background-color: #66C05D;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: flex-start;
     align-items: center;
 }
 
@@ -311,6 +311,11 @@ html, body {
 
 .info-block__img {
     padding-right: 40px;
+}
+
+.info-block__img img {
+    width: 140px;
+    height: 108px;
 }
 
 .button-map {
@@ -399,8 +404,7 @@ html, body {
     .main__info {
         padding-left: 1%;
     }
-    
-    
+        
     .offers__header {
         text-align: center;
         padding: 0 15px;
@@ -414,6 +418,9 @@ html, body {
         margin-bottom: 15px;  
     }
     
+    .main__intro {
+    }
+
     .main__additional {
         flex-direction: column;
         background-color: #66C05D;
@@ -428,10 +435,16 @@ html, body {
     .contacts__adress {
         padding-left: 2%;
     }
+    
+    .legal-notice__info {
+        margin: 0 20px;
+    }
 }
 
 @media (max-width: 900px) {
-    .main__info {
+
+    .main__menu {
+        justify-content: space-around;
     }
 
     .contact-telephone_footer {
@@ -439,16 +452,21 @@ html, body {
         gap: 10px;
     }
 
-    .contacts__adress {
-        order: 3;
-        flex: 0 0 445.88px;
+    .contacts {
         flex-wrap: wrap;
-    }
-
-    .main__menu {
         justify-content: space-around;
     }
 
+    .contacts__adress {
+        order: 3;
+        flex: 0 0 503px;
+        padding-left: 0;
+        text-align: center;
+    }
+
+    .legal-notice__info {
+        flex-direction: column;
+        align-items: flex-start;    }
 }
     
 @media (max-width: 700px) {
@@ -582,6 +600,54 @@ html, body {
 
     }
 
+    .main__intro {
+        height: 450px;
+    }
+
+    .main__info {
+        padding-top: 95px;
+    }
+
+    .main__header {
+        font-size: 37px;
+    }
+
+    .main__text {
+        font-size: 11px;
+    }
+
     .info-block {
+        width: 100vw;
+        height: 190px;
+    }
+
+    .info-block__content {
+        padding-left: 8px;
+    }
+
+    .info-block__header {
+        margin-right: -25px;
+    }
+
+    .info-block__img {
+        padding-right: 8px;
+    }
+
+    .info-block__img img {
+        width: 112px;
+        height: 86.4px;
+    }
+
+    .contacts {
+        height: 180px;
+    }
+
+    .contacts__icons-block {
+        padding-top: 10px;
+    }
+
+    .contact-telephone_footer {
+        flex-direction: row;
+        padding: 20px 0 20px 0;
     }
 }
