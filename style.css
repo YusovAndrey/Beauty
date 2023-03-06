@@ -546,15 +546,16 @@ html, body {
     
     .menu-icon_close {
         display: none;
-        height: 30px;
     }
 
     .menu-icon_close::before,
     .menu-icon_close::after {
+        position: absolute;
+        top: 25px;
+        width: 75%;
         content: "";
         background-color: #000000;
         height: 2px;
-        transform-origin: 0 0;
     }
     
     .menu-icon_close::before {
