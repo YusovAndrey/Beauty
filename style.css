@@ -20,10 +20,6 @@ html, body {
     border-bottom: 1px solid #EFEFEF;
 }
 
-.header__wrapper {
-    
-}
-
 .header__menu {
     background-color: #E5E5E5;
     height: 50px;
@@ -37,7 +33,6 @@ html, body {
     justify-content: space-between;
     margin: 0 auto;
 }
-
 
 .menu__list {
     width: 460px;
@@ -69,17 +64,11 @@ html, body {
     padding: 0px 20px;
 }
 
-.header__logo {
-}
-
 .logo {
     display: flex;
     align-items: center;
     max-width: 260px;
     justify-content: space-between;
-}
-
-.logo__img {
 }
 
 .logo__text {
@@ -98,7 +87,6 @@ html, body {
     line-height: 19px;
     gap: 35px;
 }
-
 
 .telephone, .telephone:visited{
     text-decoration: none;
@@ -131,9 +119,6 @@ html, body {
     background-color: #66C05D;
 }
 
-.button_call {
-}
-
 .main {
     background-color: #EFEFEF;
     padding-bottom: 125px;
@@ -162,7 +147,6 @@ html, body {
     padding-top: 192px;
 }
 
-
 .main__header {
     font-style: normal;
     font-weight: 700;
@@ -185,7 +169,6 @@ html, body {
     background-color: #b8e6b3;
     color: #494949;
     border-color: #b8e6b3;
-
 }
 
 .offers {
@@ -330,15 +313,9 @@ html, body {
     border-color: #b8e6b3;
 }
 
-.footer {
-}
-
 .footer__line {
     border-top: 1px solid #EFEFEF;
     margin-top: 6px;
-}
-
-.footer__contacts {
 }
 
 .contacts {
@@ -354,7 +331,6 @@ html, body {
     display: flex;
     justify-content: flex-start;
 }
-
 
 .contacts__icon {
     border: 2px solid #66C05D;
@@ -417,9 +393,6 @@ html, body {
     .offers__content-block:not(:last-child) {
         margin-bottom: 15px;  
     }
-    
-    .main__intro {
-    }
 
     .main__additional {
         flex-direction: column;
@@ -466,7 +439,8 @@ html, body {
 
     .legal-notice__info {
         flex-direction: column;
-        align-items: flex-start;    }
+        align-items: flex-start;
+    }
 }
     
 @media (max-width: 700px) {
@@ -597,7 +571,6 @@ html, body {
 
     .menu-icon_close::after {
         transform: rotate(-45deg);
-
     }
 
     .main__intro {
